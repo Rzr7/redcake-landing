@@ -1,0 +1,224 @@
+body {
+    min-height: 100vh;
+    padding-top: 100px;
+    background-color: #161513;
+    padding-bottom: 250px;
+    position: relative;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 75%;
+    width: 500px;
+    height: auto;
+}
+
+.title-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #FFFFFF;
+    font-size: 55px;
+    text-align: center;
+}
+
+.description-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    color: #C5C5C5;
+    font-size: 18px;
+    text-align: justify;
+    max-width: 800px;
+    line-height: 28px;
+}
+
+.portfolio-title-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-title {
+    color: #FFFFFF;
+    font-size: 35px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.portfolio-card-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-card {
+    width: 550px;
+    background-color: #2A2A2A;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.1s ease-in-out;
+}
+
+.portfolio-card:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.portfolio-card .thumbnail {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+}
+
+.portfolio-card .description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 0 25px 0 25px;
+}
+
+.portfolio-card .description .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.portfolio-card .description .title .subtext {
+    font-size: 12px;
+    line-height: 19px;
+    color: #C5C5C5;
+    text-transform: uppercase;
+}
+
+.portfolio-card .description .title .name {
+    font-size: 21px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.portfolio-card .description .steam-logo {
+    height: 50px;
+    width: auto;
+}
+
+.footer {
+    height: 110px;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    bottom:0;
+    padding-left: 25px;
+    padding-right: 25px;
+    left: 0;
+    right: 0;
+}
+
+.footer .trademark {
+    font-size: 14px;
+    color: #C5C5C5;
+    max-width: 950px;
+}
+
+@media only screen and (max-width : 768px) {
+    .title-container {
+        margin-top: 50px;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .description-container {
+        margin-top: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .description-container .description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .portfolio-title-container {
+        margin-top: 50px;
+    }
+
+    .portfolio-title-container .portfolio-title {
+        font-size: 32px;
+    }
+
+    .portfolio-card-container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .portfolio-card-container .portfolio-card {
+        max-width: 100%;
+    }
+
+    .portfolio-card-container .portfolio-card .thumbnail {
+        height: auto;
+    }
+
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+        justify-content: flex-start;
+        width: unset;
+    }
+
+    .footer .trademark {
+        font-size: 12px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .portfolio-card-container .portfolio-card .description {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: unset;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        gap: 20px;
+    }
+}
